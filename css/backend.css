@@ -1,0 +1,125 @@
+/* === ajaxify === */
+.not_woo_customers_loading > * {
+    opacity:0.2;
+}
+
+.not_woo_customers h1{
+	color:#007cba;
+}
+
+.not_woo_customers_loading:before {
+    position:fixed;
+    content: "Loading...";
+    font-size:2em;
+    padding: 22px;
+    background: #000;
+    background: url(../images/loading.gif) no-repeat center center;
+    color: #777;
+    width: 50%;
+    height:50%;
+    margin-left:15%;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+.not_woo_customers_footer{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	
+}
+
+.not_woo_customers_meta_box div{
+	opacity:0;
+	height:0px;
+}
+
+.not_woo_customers textarea{
+	width:100%;
+}
+
+/* The Modal (background) */
+.not_woo_customersnmodal , #not_woo_customers_extensions_popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999999999999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.not_woo_customersmodal-content , .not_woo_customers_extensions_content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  min-height:70%;
+  overflow:hidden;
+}
+
+/* The Close Button */
+.not_woo_customersclose {
+  color: #aaa;
+  flex: 0 100%;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.not_woo_customersclose:hover,
+.not_woo_customersclose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.not_woo_customers_extensions_content{
+	text-align:center;
+	display: flex;
+	flex-wrap: wrap;	
+}
+.not_woo_customers_extensions_content h3 a,.not_woo_customers_extensions_content h2{
+	color:#21b384;
+}
+.not_woo_customers_extensions_content h2{
+	padding:20px;
+	text-align:center;
+	flex: 0 100%;
+	border-bottom: 1px solid #efefef;
+}
+
+.not_woo_customers_extensions_content img{
+	width:200px;
+}
+
+
+
+.not_woo_customers_extensions_content .ex_columns{
+    flex: 0 50%;
+	padding:20px;
+	box-sizing:border-box;
+}
+.not_woo_customers_extensions_content .ex_columns:nth-child(even) {
+    border-right: 1px solid #efefef;
+}
+
+.not_woo_customers .fa-star{
+	color:gold;
+}
+
+@media (max-width:767px){
+	
+	.not_woo_customers .ex_columns{
+		 flex: 0 100%;
+	}
+		
+}
+
+
